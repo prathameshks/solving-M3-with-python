@@ -4,7 +4,7 @@
 # Welcome to the SPPU Computer Engineering SE M3 Numerical Solver and Verifier! 🎉
 
 
-Welcome to the SPPU Computer Engineering SE M3 Numerical Solver and Verifier repository! This repository contains programs designed to solve and verify numericals for the SPPU Computer Engineering SE M3 course.
+This repository contains programs designed to solve and verify numericals for the SPPU Computer Engineering SE M3 course.
 
 Are you tired of manually solving and verifying SPPU Computer Engineering SE M3 numericals? Fear not, for this repository is here to save the day (and your sanity)! 🦸
 
