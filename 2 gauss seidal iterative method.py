@@ -12,14 +12,19 @@ c3 = float(input("Enter c3: "))
 d3 = float(input("Enter d3: "))
 acu = int(input("Enter the accuracy: "))
 
+
 def gauss_seidal(x, y, z, itr):
-    x = (d1 - (b1 * y) - (c1 * z)) / a1
-    y = (d2 - (a2 * x) - (c2 * z)) / b2
-    z = (d3 - (a3 * x) - (b3 * y)) / c3
-    print(f"x{itr} = ", round(x, acu))
-    print(f"y{itr} = ", round(y, acu))
-    print(f"z{itr} = ", round(z, acu))
-    return (x, y, z)
+    x1 = (d1 - (b1 * y) - (c1 * z)) / a1
+    y1 = (d2 - (a2 * x1) - (c2 * z)) / b2
+    z1 = (d3 - (a3 * x1) - (b3 * y1)) / c3
+    print(f"x{itr} = ", f"({d1} - ({b1} * {round(y,acu)}) - ({c1} * {round(z,acu)})) / {a1}")
+    print(f"x{itr} = ", round(x1, acu))
+    print(f"y{itr} = ", f"({d2} - ({a2} * {round(x1,acu)}) - ({c2} * {round(z,acu)})) / {b2}")
+    print(f"y{itr} = ", round(y1, acu))
+    print(f"z{itr} = ", f"({d3} - ({a3} * {round(x1,acu)}) - ({b3} * {round(y1,acu)})) / {c3}")
+    print(f"z{itr} = ", round(z1, acu))
+    return (x1, y1, z1)
+
 
 x = y = z = 0
 i = 1
@@ -46,12 +51,13 @@ while (input("Do you want to continue? (y/n) ") != "n"):
 6
 -1
 85
-1
-1
-54
-110
 6
 15
 2
 72
+1
+1
+54
+110
+
 """
