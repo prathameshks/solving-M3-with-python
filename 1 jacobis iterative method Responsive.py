@@ -34,7 +34,6 @@ def jacobis(old_val):
     return new_val
 
 
-x1 = y1 = z1 = 0
 itr = 1
 cont = True
 vals = [0 for i in range(n)]
